@@ -71,7 +71,7 @@ Was it ethical for Charlie Miller to be to be in violation of the Digital Millen
 %%% Social Implications %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Social Implications} 
-<To be filled in>
+This case looks at whether or not the DMCA is being constructive in protecting the rights of the correct people. It's anti-circumvention law is widely criticized for making software secure through obscurity. The general logic of it is that if it is illegal to bypass well written and obscure security locks (TPMs), it doesn't matter what software lies beyond since it's the company's software and no one else is allowed to examine it for any reason.\cite{dictionary} This provides social issues for whether or not we should trust the car manufacturers, but suppresses the general public from figuring out if the product they're using actually is safe and does what we think it does. By risking punishment for security researchers looking into the code of products, it discourages potential security flaws to be unveiled and fixed, leaving it susceptible to being taken advantage of by someone from a foreign country who is not under the same laws.\cite{turner}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Extant Arguments from External Sources %%%
@@ -109,24 +109,62 @@ When Toyota made the statement that they weren't concerned with security risks \
 
 The Software Engineering Code of Ethics states that software engineers ``are those who contribute by direct participation or by ... the analysis ... and testing of software systems."\cite{seCode} Did Charlie Miller ``directly participate" to the analysis of a ``software system"?
 
-Hacking around a car's TPMs is ********. Miller and Valasek published a paper on how they hacked into the car\cite{officialPaper}, as well as gave a demonstration\cite{wired} and a DEF CON Hacking Conference talk on it\cite{youtube}. This makes them direct participants with the car as a ``software system'', and thus software engineers under the SE Code of Ethics and "shall adhere to the code."\cite{seCode}
+Hacking around a car's TPMs was Charlie Miller's form of direct participation. Additionally,  Miller and Valasek published a paper on how they hacked into the car\cite{officialPaper}, as well as gave a demonstration\cite{wired} and a DEF CON Hacking Conference talk on it\cite{youtube}. This makes them direct participants with the car as a ``software system'', and thus software engineers under the SE Code of Ethics and ``shall adhere to the code."\cite{seCode}
+
+The SE Code's preamble also includes that ``... software engineers must commit themselves to making software engineering a beneficial and \underline{respected} profession.''
+
+In Miller and Valasek's DEF CON presentation, one of their opening slides included the statement, ``please stop saying unhackable, you're going to look silly." The auto industry companies were acting in ways that were not consistent in keeping the software related to the cars when they said that their cars were "unhackable."
+
+Charlie Miller's unveiling of the security vulnerabilities served to make more of an effort to ensure auto industry companies act in more respectable ways by challenging their claims on security. Therefore, Charlie Miller further qualifies as a software engineer, under which the SE Code applies.
 
 
 
 
-\subsection {SE Code section 6.05: ``Not promote their own interest at the expense of the profession, client or employer"\cite{seCode}}
+%\subsection {SE Code section 6.05 (supported by 2.05)}
 
-Miller worked in his own interest when he bypassed Jeep's software security system. In this context, it was done at the expense of the security of the software Jeep uses for their cars. 
+%SE Code section 6.05 states that software engineers are to ``Not \underline{promote their own interest} at the \underline{expense} of the \underline{profession, client} or employer"\cite{seCode}
+
+%The definition of ``promote'' is ``to help or encourage to exist or flourish; further"\cite{dictionary} as well as the informal definition of ``promotion'' as ``to obtain (something) by cunning or trickery''\cite{dictionary}
+
+%``expense'' in 
+
+%The ``profession or clients'' in this case are the vehicle companies such as Jeep, Ford, and Toyota, who create and manufacture the cars Miller was testing on.
+
+%Miller worked in his own interest when he bypassed Jeep's software security system. In this context, it was done at the expense of the security of the software Jeep uses for their cars. 
+
+
+
+%maybe do this one instead?
+\subsection {SE Code section 2.05}
+
+SE Code section 2.05 states the software engineers are to ``Keep private any \underline{confidential} information gained in their \underline{professional work}, where such confidentiality is consistent with the \underline{public interest} and \underline{consistent with the law}.''
+
+``Confidential'' means to speak or write about something only in strict privacy.\cite{dictionary}
+
+"Professional work" refers to Charlie Miller's knowledge in security research, and his involvement in researching the security software behind the Jeep vehicle. 
+
+The public interest in the context of keeping confidentiality safe is the public's general security concerns to trust that their cars won't randomly be hacked while in use. 
+
+The consistency with the law for the Jeep case directly relates to the DMCA's anti-circumvention law.
+
+\vspace{.5cm}\textbf{Substituted SE Code 2.05:}\vspace{.25cm}
+
+Do not publicly speak or write about any information gained from security research on the Jeep car that could put the general public at risk of having their cars hacked while in use.
+
 
 
 
 
 \subsection{SE Code sections 6.06 and 2.02}
-SE Code 6.06 states that software engineers are to ``Obey all \underline{laws} governing their work, unless, in \underline{exceptional circumstances}, such compliance is inconsistent with the \underline{public interest}."\cite{seCode}
+SE Code 6.06 states that software engineers are to ``Obey all \underline{laws} governing their \underline{work}, unless, in \underline{exceptional circumstances}, such compliance is inconsistent with the \underline{public interest}."\cite{seCode}
 
 The definition of a ``law" is ``any written or positive rule or collection of rules prescribed under the authority of the state or nation, as by the people in its constitution."\cite{dictionary} Under this tenet, the ``laws" being applied to this problem are the DMCA's anti-circumvention law. 
 
-Additionally, SE Code section 2.02 states software engineers should ``Not knowingly use software that is obtained or retained either illegally or unethically'' \cite{seCode} which is exactly what Charlie Miller did.
+
+
+
+
+The meaning of ``work'' is ``exertion or effort directed to produce or accomplish something" \cite{dictionary}. Miller's intent to accomplish was proving to the automobile industry that their cars in fact were not unhackable. \cite{youtube}
 
 The ``public interest" in this case would be considered as the general interest people have over their personal vehicles. This is stated as such in Miller and Valasek's published paper on the hack: ``Car security research is interesting for a general audience because most people have cars and understand the inherent dangers of an attacker gaining control of their vehicle." \cite{officialPaper}
 
@@ -134,9 +172,9 @@ The definition of ``exceptional" is "forming an exception or rare instance; unus
 
 \vspace{.5cm}\textbf{Substituted SE Code 6.06:}\vspace{.25cm}
 
-Obey the DMCA anti-circumvention law, unless, an unusual circumstance occurs that the leaves public unprotected.
+Obey the DMCA's anti-circumvention law, unless, an unusual circumstance occurs that the leaves public at risk of unprotected.
 
-The DMCA renders Miller's acquisition of security research findings illegal.  Since he needed to bypass the car's TPMs in order to conduct his research, he was not obeying the law. Miller did not follow his ethical duty as a software engineer when he knowingly broke DMCA Section 1201.
+In support, SE Code section 2.02 states software engineers should ``Not knowingly use software that is obtained or retained either illegally or unethically'' \cite{seCode} which is exactly what Charlie Miller did. The DMCA renders Miller's acquisition of security research findings illegal.  Since he needed to bypass the car's TPMs in order to conduct his research, he was not obeying the law. Miller did not follow his ethical duty as a software engineer when he knowingly broke DMCA Section 1201.
 
 However, because Miller was conducting research on the security of consumer vehicles, Miller was acting consistently with the public interest of safety.
 
@@ -147,17 +185,21 @@ However, because Miller was conducting research on the security of consumer vehi
 
 Section 6.08 of the SE Code states the Software Engineers shall ``Take \underline{responsibility} for \underline{detecting}, correcting, and \underline{reporting} errors in software and associated documents on which they work."\cite{seCode}
 
-The definition of ``responsibility'' is ``the state ... of being responsible, answerable, or accountable for something within one's power ...''
-Charlie Miller's extensive knowledge of software security systems 
+The definition of ``responsibility'' is ``the state ... of being responsible, answerable, or accountable for something within one's power ...''\cite{dictionary}
+Charlie Miller's extensive knowledge of software security systems as described by his former experience with the NSA and Twitter\cite{linkedin}, security research is well 'within his power,' compared to anyone with less experience, who wouldn't be considered to have this kind of research within their power or skill set.
 
-Although Miller was in violation of the DMCA, he dedicated months of research on detecting security vulnerabilities with Jeep, Ford and Prius vehicles. He reported these errors both to the public and to the car manufacturers themselves so the problems could be remedied. 
+``To detect'' is defined as ``to discover or catch (a person) in the performance of some act,''\cite{dictionary} or ``to discover the existence of''\cite{dictionary}. 
+
+Under this section of the SE code, Miller dedicated months of research on detecting security vulnerabilities with Jeep, Ford and Prius vehicles.
+
+He reported these errors both to the public and to the car manufacturers themselves so the problems could be remedied. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Abstract your Expected Analysis %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusion}
 
-No, it was not ethical for Miller to be at risk of being charged for circumventing Jeep's security system. Overall, Miller acted in the interest of the public good. The potential damage that could have resulted to Jeep owners far exceeded Jeep's copyright concerns.
+No, because Charlie Miller behaved ethically under the SE Code of Ethics, it was not ethical for Miller to be at risk of being charged for circumventing Jeep's security system. Overall, Miller acted in the interest of the public good. The potential damage that could have resulted to Jeep owners far exceeded Jeep's copyright concerns.
 
 \end{multicols}
 
