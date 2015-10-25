@@ -24,7 +24,7 @@
 %%% Title Page  %%%
 %%%%%%%%%%%%%%%%%%%
 
-\title{\vfill Term Paper Proposal: The Ethics of Jeep Hack Breaking DMCA While Exposing Security Risks} %\vfill gives us the black space at the top of the page
+\title{\vfill The Ethics of Jeep Hack Breaking DMCA While Exposing Security Risks} %\vfill gives us the black space at the top of the page
 \author{
   Kim Arre \vspace{10pt} \\
   CSC 300: Professional Responsibilities  \vspace{10pt} \\
@@ -57,7 +57,7 @@ Dr. Miller security background includes work with the National Security Agency (
 
 When the automotive industry dismissed Miller after he displayed the possible threats, Miller followed up with further research on controlling an unaltered Jeep remotely from 10 miles away by taking advantage of the car's Uconnect system. \cite{officialPaper} This allowed him to be able to remotely control physical functions of the car including the car's windshield wipers, sound system, steering, and transmission. \cite{wired}  Only days after Andy Greenberg released an article on Wired, Miller's research on the topic resulted in Chrysler's recall of 1.4 million Jeep vehicles.\cite{recall} 
 
-However, the very act of confessing that they hacked into cars to do automotive security research left the two researchers susceptible to Jeep pressing charges against them. \cite{brokeDMCA} Although in the end, Jeep did not press charges, Miller and Valasek violated The Digital Millennium Copyright Act's (DMCA) section on Anti-Circumvention. Section 1201(a.1.A) of the DMCA states: ``No person shall circumvent a technological measure that effectively controls access to a work protected under this title."\cite{DMCA}
+However, the very act of confessing that they hacked into cars to do automotive security research left the two researchers susceptible to Jeep pressing charges against them. \cite{brokeDMCA} Although the author can find no reports of Jeep prosecuting under the law, Miller and Valasek violated The Digital Millennium Copyright Act's (DMCA) section on Anti-Circumvention. Section 1201(a.1.A) of the DMCA states: ``No person shall circumvent a technological measure that effectively controls access to a work protected under this title."\cite{DMCA}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,25 +117,10 @@ In Miller and Valasek's DEF CON presentation, one of their opening slides includ
 
 Charlie Miller's unveiling of the security vulnerabilities served to make more of an effort to ensure auto industry companies act in more respectable ways by challenging their claims on security. Therefore, Charlie Miller further qualifies as a software engineer, under which the SE Code applies.
 
-
-
-
-%\subsection {SE Code section 6.05 (supported by 2.05)}
-
-%SE Code section 6.05 states that software engineers are to ``Not \underline{promote their own interest} at the \underline{expense} of the \underline{profession, client} or employer"\cite{seCode}
-
-%The definition of ``promote'' is ``to help or encourage to exist or flourish; further"\cite{dictionary} as well as the informal definition of ``promotion'' as ``to obtain (something) by cunning or trickery''\cite{dictionary}
-
-%``expense'' in 
-
-%The ``profession or clients'' in this case are the vehicle companies such as Jeep, Ford, and Toyota, who create and manufacture the cars Miller was testing on.
-
-%Miller worked in his own interest when he bypassed Jeep's software security system. In this context, it was done at the expense of the security of the software Jeep uses for their cars. 
-
-
-
-%maybe do this one instead?
-\subsection {SE Code section 2.05}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 1st SE Code Example %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SE Code 2.05}
 
 SE Code section 2.05 states the software engineers are to ``Keep private any \underline{confidential} information gained in their \underline{professional work}, where such confidentiality is consistent with the \underline{public interest} and \underline{consistent with the law}.''
 
@@ -147,13 +132,29 @@ The public interest in the context of keeping confidentiality safe is the public
 
 The consistency with the law for the Jeep case directly relates to the DMCA's anti-circumvention law.
 
-\vspace{.5cm}\textbf{Substituted SE Code 2.05:}\vspace{.25cm}
+%In support, SE Code 2.07 states software engineers must ``identify, document, and report significant issues of social concern, ... to the employer or the client.''
 
-Do not publicly speak or write about any information gained from security research on the Jeep car that could put the general public at risk of having their cars hacked while in use.
-
-
+%The ``employer or client'' in this context is Jeep, the manufacturer of the car. Although they didn't hire him This code describes that th
 
 
+\subsubsection{Substituted Code: Do not publicly speak or write about any information gained from security research on the Jeep car that could put the general public at risk of having their cars hacked while in use.}
+%\vspace{.5cm}\textbf{Substituted SE Code 2.05 and 2.07}\vspace{.25cm}
+
+%Do not publicly speak or write about any information gained from security research on the Jeep car that could put the general public at risk of having their cars hacked while in use.
+
+\vspace{.5cm}\textbf{Discussion}\vspace{.25cm}
+
+After their discovery of the vulnerability, on August 10, 2015, Miller and Valasek published a paper titled "Remote Exploitation of an Unaltered Vehicle."\cite{officialPaper} This paper outlined the more in depth, fine details of how they managed to bypass the car's TPMs. By providing this information to the public, some Jeep owners were likely left vulnerable, as we will further discuss.
+
+For a general time line of events, the Jeep hack was unveiled roughly happened July 21, 2015\cite{wired}, and Jeep recalled their affected vehicles only days later.\cite{recall} Although the paper wasn't published until a month later, it's very unlikely that every Jeep car on the road who was vulnerable to this reported back to Jeep to have it fixed. Therefore, by providing the specifics of the hack, it allowed people to try it on their own on any car they found that wasn't updated, potentially harming an unsuspecting Jeep owner. 
+
+The DMCA's anti-circumvention law protects against cases like this from happening by making it illegal to bypass TPMs in the first place.\cite{DMCA} By outlawing this behavior, they can be sure nobody may legally hack into their vehicles, for good or for bad. If nobody finds a vulnerability to exploit, nobody is at risk of being hacked.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 2nd SE Code Example %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{SE Code sections 6.06 and 2.02}
 SE Code 6.06 states that software engineers are to ``Obey all \underline{laws} governing their \underline{work}, unless, in \underline{exceptional circumstances}, such compliance is inconsistent with the \underline{public interest}."\cite{seCode}
@@ -170,9 +171,10 @@ The ``public interest" in this case would be considered as the general interest 
 
 The definition of ``exceptional" is "forming an exception or rare instance; unusual." \cite{dictionary} Typically, laws are made to protect the people under which they govern. Therefore, an example of an ``unusual'' circumstance would be one in which the law is doing the opposite and preventing them from being protected.
 
-\vspace{.5cm}\textbf{Substituted SE Code 6.06:}\vspace{.25cm}
+%\vspace{.5cm}\textbf{Substituted SE Code 6.06}\vspace{.25cm}
+\subsubsection{Substituted Code 6.06: Obey the DMCA's anti-circumvention law, unless, an unusual circumstance occurs that the leaves public at risk of unprotected.}
 
-Obey the DMCA's anti-circumvention law, unless, an unusual circumstance occurs that the leaves public at risk of unprotected.
+%Obey the DMCA's anti-circumvention law, unless, an unusual circumstance occurs that the leaves public at risk of unprotected.
 
 In support, SE Code section 2.02 states software engineers should ``Not knowingly use software that is obtained or retained either illegally or unethically'' \cite{seCode} which is exactly what Charlie Miller did. The DMCA renders Miller's acquisition of security research findings illegal.  Since he needed to bypass the car's TPMs in order to conduct his research, he was not obeying the law. Miller did not follow his ethical duty as a software engineer when he knowingly broke DMCA Section 1201.
 
@@ -180,19 +182,31 @@ However, because Miller was conducting research on the security of consumer vehi
 
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 3rd SE Code Example %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{SE Code section 6.08}
 
-Section 6.08 of the SE Code states the Software Engineers shall ``Take \underline{responsibility} for \underline{detecting}, correcting, and \underline{reporting} errors in software and associated documents on which they work."\cite{seCode}
+Section 6.08 of the SE Code states the Software Engineers shall ``Take responsibility for \underline{detecting}, correcting, and \underline{reporting} \underline{errors in software} ... on which they work."\cite{seCode}
 
 The definition of ``responsibility'' is ``the state ... of being responsible, answerable, or accountable for something within one's power ...''\cite{dictionary}
+
+``To detect'' means ``to discover the existence of''\cite{dictionary}, or find.
+
+``Errors in software'' when applied to this problem correspond to the security vulnerabilities that existed in Jeep cars. 
+
+``Reporting'' is described as ``an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc.''\cite{dictionary}
+
+\subsubsection{Substituted code 6.08: Take responsibility and be accountable for finding and describing in detail security vulnerabilities found in Jeep vehicles.}
+\textbf{Discussion}\vspace{.25cm}
+
 Charlie Miller's extensive knowledge of software security systems as described by his former experience with the NSA and Twitter\cite{linkedin}, security research is well 'within his power,' compared to anyone with less experience, who wouldn't be considered to have this kind of research within their power or skill set.
 
-``To detect'' is defined as ``to discover or catch (a person) in the performance of some act,''\cite{dictionary} or ``to discover the existence of''\cite{dictionary}. 
+Under this section of the SE code, Miller dedicated months of research on detecting security vulnerabilities with Jeep, Ford and Toyota vehicles.\cite{officialPaper} Although it meant breaking the DMCA's anti-circumvention law, Miller believed that his responsibility as a software engineer was to find and report these dangers regardless of the consequences. 
 
-Under this section of the SE code, Miller dedicated months of research on detecting security vulnerabilities with Jeep, Ford and Prius vehicles.
+He reported these errors both to the public and to the car manufacturers themselves so the problems could be remedied, and only days later Jeep recalled the vehicles to be updated with a security patch.\cite{recall}
 
-He reported these errors both to the public and to the car manufacturers themselves so the problems could be remedied. 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Abstract your Expected Analysis %%%
