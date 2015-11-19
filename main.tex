@@ -101,6 +101,8 @@ Volkswagen went on for years promoting their Clean Diesel technology, with the t
 
 When manufacturers are dishonest, there's a potential for people to die as a result. In the Volkswagen case, 4000 people may have died from Volkswagen's dishonesty.\cite{vwkills} Had security researchers, such as Charlie Miller, been able to investigate the vehicles freely those deaths could have been avoided.
 
+
+
 \subsubsection{Manufacturers should be doing more to ensure their vehicles are safe by allowing for more extensive tests}
 
 When Toyota made the statement that they weren't concerned with security risks \cite{originalHack} before Miller proved them wrong, it's unclear if they genuinely believed their security was rock solid. There's a possibility that they hadn't done enough testing but assumed that security by obscurity would be enough\cite{brokeDMCA}. Car manufacturers should follow in the footsteps of Uber who hires researchers like Miller and Valasek to ensure the security of their vehicles\cite{uber}.
@@ -114,7 +116,7 @@ When Toyota made the statement that they weren't concerned with security risks \
 In order for vehicle companies to stay competitive with the others in their field, they must use technological protection measures (TPMs) to ensure that their intellectual property is safe from being stolen or used against them in the market. 
 
 The TPM anti-circumvention law promotes creativity by assuring creators and copyright holders have control over their intellectual property and people won't be able to use it in ways that they don't approve of.\cite{chris} Ensuring they have the rights to their intellectual property encourages more creative and innovative products to be created by both the original company, as well as their competitors. \cite{chris}
-     
+ 
 %\subsubsection{It is a disservice to the public to risk the car's code landing in the hands of people with malicious intent}
 \subsubsection{Allowing malicious actors to view or modify software responsible for safe vehicle operation would put public safety at risk.}
 %modifying software leads to safety concerns
@@ -130,9 +132,12 @@ By circumventing the TPMs of cars, Miller put all cars affected at risk when he 
 
 The Software Engineering Code of Ethics states that software engineers ``are those who contribute by direct participation or by ... the analysis ... and testing of software systems."\cite{seCode} Did Charlie Miller ``directly participate" to the analysis of a ``software system"?
 
-The definition of ``direct'' is ``without intervening factors or intermediaries."\cite{dictionary} Miller and Valasek published a paper on how they hacked into the car\cite{officialPaper}, as well as gave a demonstration\cite{wired} and a DEF CON Hacking Conference talk on it\cite{youtube}. 
-This makes them direct participants with the car as a ``software system'' since all these sources indicate that they personally developed the software to defeat the car's TPM instead of merely reporting about someone else who did. Thus, they are software engineers under the SE Code of Ethics and ``shall adhere to the code."\cite{seCode}
+The definition of ``direct'' is ``without intervening factors or intermediaries."\cite{dictionary}
+Miller and Valasek published a paper on the specifics of how they hacked the Jeep. \cite{officialPaper} Additionally, they gave a DEF CON Hacking Conference talk on how they did it. \cite{youtube} During both, Miller and Valasek took responsibility for the hack by using their names.\cite{officialPaper}\cite{youtube} Since there were no intermediaries between the Jeep car and the security researchers, Miller and Valasek were directly participating. 
 
+``Software testing'' is defined as ``any activity aimed at evaluating ... capability of a program or system and determining that it meets its required results.''\cite{softwareTesting} A form of software testing is one in which you try to break the existing functionality. \cite{softwareTesting}\cite{breakTests} The existing functionality in this case would be both the Jeep's TPM, as well as the UConnect system that allowed the researchers to gain control. 
+
+Therefore, Miller and Valasek directly tested and broke the Jeep's TPM and UConnect system, which qualifies them as software engineers who shall adhere to the Software Engineering Code of Ethics.
 
 %%%%%%%%%%%%%%%%%
 %%% 1st SE Code Example %%%
@@ -140,59 +145,85 @@ This makes them direct participants with the car as a ``software system'' since 
 \subsection{SE Code sections 6.06}
 SE Code 6.06 states that software engineers are to \textbf{``Obey all \underline{laws} governing their \underline{work}, unless in \underline{exceptional circumstances}, such compliance is inconsistent with the \underline{public interest}."} \cite{seCode}
 
-The definition of a ``law" is ``any written or positive rule or collection of rules prescribed under the authority of the state or nation, as by the people in its constitution."\cite{dictionary} Under this tenet, the ``laws" being applied to this problem are the DMCA's anti-circumvention law. 
+The definition of a ``law" is ``any written or positive rule or collection of rules prescribed under the authority of the state or nation, as by the people in its constitution."\cite{dictionary} The ``laws" being applied to this problem are the DMCA's anti-circumvention law. 
 
-The meaning of ``work'' is ``exertion or effort directed to produce or accomplish something" \cite{dictionary}. Charlie Miller made an effort to use his knowledge in security research in order to accomplish finding security vulnerabilities in Jeep cars.
+The meaning of ``work'' is ``exertion or effort directed to produce or accomplish something" \cite{dictionary}. Charlie Miller made an effort to use his knowledge in security research in order to accomplish finding security vulnerabilities in Jeep cars.\cite{officialPaper}
 
-The definition of ``exceptional" is ``forming an exception or rare instance; unusual." \cite{dictionary} Typically, laws are made to protect the people under which they govern. Therefore, an example of an ``unusual'' circumstance would be one in which the law is doing the opposite and preventing protection of the public.
+The definition of ``exceptional" is ``forming an exception or rare instance; unusual." \cite{dictionary} Typically, laws are made to protect the people under which they govern. Therefore, an example of an ``unusual'' circumstance would be when the law endangers the people it governs.
 
 \vspace{.5cm}\hspace{-.5cm}\textbf{Public Interest}\vspace{.2cm}
 
-The ``public interest" in this case is anyone who could possibly be affected by vehicles on the road. This includes drivers, pedestrians, and insurance companies.
+``Public interest'' is defined as ``the welfare or well-being of the general public."\cite{dictionary} Further, ``public'' is defined as ``affecting a population or a community as a whole.''\cite{dictionary} In this case, the affected community consists of anyone who interacts with vehicles on the road. This includes drivers, pedestrians, and insurance companies. Their well-being may be defined as their safety in terms of money, property and health.
 
-Drivers most immediately interact with motor vehicles, so they have an direct interest in keeping their personal vehicles safe. This is stated as such in Miller and Valasek's published paper on the Jeep hack: ``Car security research is interesting for a general audience because most people have cars and understand the inherent dangers of an attacker gaining control of their vehicle." \cite{officialPaper}
+The driving community must consider the well-being of people who don't drive. Pedestrians' lives can can be gravely affected by cars each time they cross a street or crosswalk. 
 
-Even people who don't drive still have an interest in whether cars on the road can be  compromised. Pedestrians' lives can can be gravely affected by cars each time they cross a street or crosswalk. A hacked car has the potential to take the lives of pedestrians.
+Drivers most immediately interact with motor vehicles. Their well-being depends on keeping their life, personal property, and passengers safe. ``While health and wellbeing is important in every part of life’s activities, driving may be considered an ‘extreme’ activity that depends on the awareness and performance of the driver.''\cite{driverWellBeing} Drivers' actions while operating a car can have fatal affects, causing death or psychological damage.
 
-Lastly, car insurance companies have an interest in hacked cars as well. Every car on the road is required to have insurance by law,\cite{insurance} so any incident that occurs will affect an insurance company financially. Not only does this include property damage of the car, but life threatening circumstances as well. ``Liability insurance ... is almost always mandatory because it helps protect other people and their property."\cite{insurance} When cars are compromised on the road, insurance companies need to pay out for damages, making it their interest for cars to be as safe as possible.
+Lastly, the well-being of car insurance companies are affected by hacked cars as well. Every car on the road is required to have insurance by law,\cite{insurance} so any incident that occurs will affect an insurance company financially. Not only does this include property damage of the car, but life threatening circumstances as well. ``Liability insurance ... is almost always mandatory because it helps protect other people and their property."\cite{insurance} When cars are compromised on the road, insurance companies need to pay out for damages, making it their interest for cars to be as safe as possible.
+
+\subsubsection{Substituted Code 6.06: Charlie Miller should obey the DMCA's anti-circumvention law while doing security research on Jeep cars, unless such law threatens the well-being of drivers, pedestrians, or insurance companies.}
+
+\textbf{Obeying Anti-circumvention law }\vspace{.2cm}
+
+In order for Charlie Miller to uncover the security vulnerabilities, he needed to bypass the car's TPMs. \cite{brokeDMCA} The Anti-Circumvention law, Section 1201(a.1.A) of the DMCA, states: ``No person shall circumvent a technological measure that effectively controls access to a work protected under this title."\cite{DMCA}
+
+The articles on Miller's demonstration refer to it as a Jeep ``hack", but what does this word actually mean? The definition of ``hack'' is to ``use a computer to gain unauthorized access to data in a system.''\cite{dictionary} Unauthorized access is considered not having official permission or approval. \cite{dictionary} Presence of the Jeep's TPM indicates that he did not have permission or approval to view the vehicle's code.
+
+Therefore, the only way he could have gained control of a Jeep was by defeating the TPMs to gain unauthorized access to the Jeep car, which was not legal under Anti-Circumvention Law.\cite{DMCA}
+
+% why anti circumvention exists 
+%weigh the pros and cons of obeying vs. not. (lives at risk vs. protecting corporations
 
 
-\subsubsection{Substituted Code 6.06: Charlie Miller should obey the DMCA's anti-circumvention law while doing security research on Jeep cars, unless such law leaves drivers, pedestrians, or insurance companies vulnerable.}
 
-\textbf{Public Vulnerability}\vspace{.2cm}
+Now that we've determined that Charlie Miller did not obey the law, the only way his actions were ethical are if he was acting in a way consistent with the community's well-being.
 
-Charlie Miller had an ethical obligation to base his actions on the public good in terms of how vulnerable they were to attacks. \cite{seCode} ``Vulnerability" is defined as being susceptible to physical attack or harm.\cite{dictionary} 
+\vspace{.5cm}\hspace{-.5cm}\textbf{Public Well-Being}\vspace{.2cm}
 
-Attacks in this case apply to all three forms of public interests. Drivers are concerned about attacks in the form of having their vehicle taken over during operation. \cite{officialPaper} The worst consequences of which would be a fatal collision that results from a hijack. 
+Charlie Miller had an ethical obligation to base his actions on the well-being of the community. \cite{seCode} The well-being of a community is based on their health, property, and money.
 
-Pedestrians experience attacks when their lives are at risk of being hit by a compromised vehicle. 
+\vspace{.2cm}\textbf{Pedestrians}
 
-Both drivers and insurance companies have the consideration of an attack in the form of stealing. Cars aren't only vulnerable while they're in use and if not secure, can be taken advantage of by remotely unlocking the doors and starting the engine. \cite{hackingRisk}
+Pedestrians experience attacks when their lives are at risk of being hit by a compromised vehicle. Research shows that if a car is traveling at 40 miles per hour and hits a pedestrian, it has a 90\% chance of killing them.\cite{killSpeed} A compromised car has the potential to take the lives of pedestrians when the driver no longer has the ability to keep them safe from harm. 
 
 A more extreme example of an attack would be public figures and other influential leaders. In an interview, Valasek suggested that ``it's not too early for national leaders and others who might face targeted attacks to think about the security risks of their car's technological features."\cite{hackingRisk}
 
-The demonstration of the Jeep hack was a very controlled example of how the driver could be affected by someone taking over any feature of the car. The hack allowed Miller and Valasek to control the steering\cite{wired}, which could have been used to steer the driver into something dangerous. However, even such a controlled experiment, had its risks. 
+\vspace{.2cm}\textbf{Drivers}
 
-%However, because Miller was conducting research on the security of consumer vehicles, Miller was acting consistently with the public interest of safety.
+ Drivers are concerned about attacks in the form of having their vehicle taken over during operation. \cite{officialPaper} The worst consequences of which would be a fatal collision that results from a hijack. 
 
+The demonstration of the Jeep hack was a very controlled example of how the driver could be affected by someone taking over any feature of the car. However, even such a controlled experiment had its risks. When Miller and Valasek took over functions of the car considered to be less dangerous, such as windshield wipers and fluid, the driver of the demonstration couldn't see and was still fearful of his surroundings.\cite{dangerousJeepHack}\cite{wired}
 
-\vspace{.5cm}\hspace{-.5cm}\textbf{Obeying Anti-circumvention law }\vspace{.2cm}
+Car accidents can cause psychological damage to drivers, which affect their well-being. Drivers may experience post-traumatic stress disorder and experience high amounts of anxiety and stress.\cite{trauma} This takes a direct toll on their health, or well-being. 
 
-In order for Charlie Miller to uncover the security vulnerabilities, he needed to bypass the car's TPMs. \cite{brokeDMCA} The Anti-Circumvention law, Section 1201(a.1.A) of the DMCA, states: ``No person shall circumvent a technological measure that effectively controls access to a work protected under this title."\cite{DMCA}
-% why anti circumvention exists 
-%weigh the pros and cons of obeying vs. not. (lives at risk vs. protecting corporations
-% charlie miller didn't obey it
+\vspace{.2cm}\textbf{Insurance Companies}
 
+Both drivers and insurance companies must consider an attack in the form of stealing. Cars aren't only vulnerable while they're in use and if not secure, can be taken advantage of by remotely unlocking the doors and starting the engine. \cite{hackingRisk}
 
+Additionally, insurance gets complicated for the case of a hacked vehicle. Who is at fault for a compromised vehicle? The driver who's the usual operator of the car? The manufacturer for producing a car with security vulnerabilities? The hacker? How do you know who the hacker is, or prove that the car was hacked?  \cite{alanna}
+
+Now that we've established who the public interest is, we need to determine whether it was ethical of Miller to break the law in the interest of drivers, pedestrians and insurance companies.
+
+\vspace{.2cm}\textbf{Was it worth breaking the law?}
+
+It's sometimes hard to tell if a manufacturer is being trustworthy when they're so secretive of what lies beyond the TPMs. In an interview, Valasek "Car manufacturers generally say little about what they are doing to mitigate the risks of systems,"\cite{hackingRisk}
+
+``The problem is, people want to get their technology out there really quick, So you don’t have programmers sitting there looking at everything line by line to make sure that everything is secure."\cite{insuranceRisks}
+
+Unfortunately, it's easier for car manufacturers to put a security lock on their software than it is to thoroughly test to eliminate as many vulnerabilities as possible. \cite{chris} However, `security through obscurity can only be so secure.\cite{chris} It's often prevalent for companies to weigh the financial costs of allowing people to die versus testing and better securing their software. \cite{turner} Often times, it turns out that it's cheaper for them to ignore the problems and let people die, which is a direct influence on the public's well-being. \cite{turner}
+
+Charlie Miller's discovery of the vulnerability may have saved pedestrians their lives, drivers their property and mental health, and insurance companies money. Fortunately, we won't know how many people would have been negatively affected by the vulnerability since it resulted in the recall of all the affected vehicles. \cite{recall} Jeep, Chrysler, Dodge, and Ram cars and their drivers are more secure because of his discovery. \cite{recall}
 
 \vspace{.5cm}\hspace{-.5cm}\textbf{Discussion Summary}\vspace{.2cm}
 
-Although Charlie Miller violated the anti-circumvention law, doing so was consistent with the public interest of being protected from potential attacks with malicious intent.
+The problem of compromised cars opens up a plethora of complications for insurance and risks for the lives of pedestrians and drivers involved. When anti-circumvention law prevents security researchers from discovering vulnerabilities, car manufacturers aren't doing all they can to be sure their systems are as safe as possible. 
+
+Although Charlie Miller violated anti-circumvention law, he uncovered a major security vulnerability that had the potential to save the public's health, money, and property. Charlie Miller was consistent with the well-being of drivers, pedestrians and insurance companies.
 
 \begin{framed}
-\hspace{-.5cm}\textbf{SE Code 6.06:} Obey laws vs. public interest
+\hspace{-.67cm}\textbf{SE Code 6.06:} Laws vs. Public Interest
 
-\hspace{-.5cm}\textbf{Charlie Miller:} Ethical
+\hspace{-.67cm}\textbf{Charlie Miller:} Ethical
 \end{framed}
 
 
@@ -202,7 +233,7 @@ Although Charlie Miller violated the anti-circumvention law, doing so was consis
 
 \subsection{SE Code section 6.08}
 
-Section 6.08 of the SE Code states the Software Engineers shall \textbf{``take responsibility for \underline{detecting}, correcting, and \underline{reporting} \underline{errors in software} ... on which they work."}\cite{seCode}
+Section 6.08 of the SE Code states the Software Engineers shall \textbf{``take \underline{responsibility} for \underline{detecting}, correcting, and \underline{reporting} \underline{errors in software} ... on which they work."}\cite{seCode}
 
 The definition of ``responsibility'' is ``the state ... of being responsible, answerable, or accountable for something within one's power ...''\cite{dictionary}
 
@@ -212,24 +243,39 @@ The definition of ``responsibility'' is ``the state ... of being responsible, an
 
 ``Reporting'' is described as ``an account or statement describing in detail an event, situation, or the like, usually as the result of observation, inquiry, etc.''\cite{dictionary}
 
-\subsubsection{Substituted code 6.08: Charlie Miller should be held accountable for finding security vulnerabilities in Jeep vehicles and describing them in detail.}
+\subsubsection{Substituted code 6.08: Charlie Miller should be held accountable for discovering security vulnerabilities in Jeep vehicles and describing them in detail.}
 
-% TODO: add a lead in to the subsections
+In order to evaluate if Charlie Miller was ethical under SE code 6.08, we must analyze three parts of the substituted code. These parts include whether or not Charlie Miller is considered accountable, whether or not there were security vulnerabilities, and whether or not he described such vulnerabilities in detail. 
 
+\vspace{.5cm}\hspace{-.5cm}\textbf{Accountability}\vspace{.2cm}
 
+Charlie Miller has extensive knowledge and history with software security systems. This is described by his former experience with the NSA and Twitter\cite{linkedin} prove that security research is well `within his power.' 
 
-\textbf{Was Charlie Miller accountable?}
+%compared to anyone with less experience, who wouldn't be considered to have this kind of research within their power or skill set.
 
-Charlie Miller's extensive knowledge of software security systems as described by his former experience with the NSA and Twitter\cite{linkedin} prove that security research is well `within his power,' compared to anyone with less experience, who wouldn't be considered to have this kind of research within their power or skill set.
+Miller dedicated months of research on detecting security vulnerabilities with Jeep, Ford and Toyota vehicles.\cite{officialPaper}
 
-Under this section of the SE code, Miller dedicated months of research on detecting security vulnerabilities with Jeep, Ford and Toyota vehicles.\cite{officialPaper}
+\vspace{.5cm}\hspace{-.5cm}\textbf{Security vulnerabilities}\vspace{.2cm}
 
-\textbf{Security vulnerabilities?}
+Jeep's TPMs made it difficult to determine the presence of security vulnerabilities in software since they often operate under conditions of ``security through obscurity.'' \cite{chris} If we're not allowed to examine the code, how do we know if the product really is safe?
 
-\textbf{Describing in detail?}
+In an interview, Charlie Miller believes we should never consider software completely ``unhackable."\cite{unhackableInterview}\cite{youtube} ``Most complex systems tend to have errors because as humans we are not that great at writing secure code." \cite{unhackableInterview}. Part of the reason for this is because it's impossible to account for every possible case, or test for absolutely everything. \cite {turner} Therefore, all software must contain vulnerabilities in some way.
+
+Vulnerabilities are defined as ``flaws in computer software that create weaknesses in the overall security of the computer or network.''\cite{norton} By this definition, a TPM itself  can be considered a security vulnerability. If manufacturers use TPM as an attempt to hide all of the other security risks, it makes it easier for malicious hackers to take advantage of the system. When TPMs are too heavily relied on, manufacturers are  less likely to put effort into ensuring the rest of the software is secure. \cite{turner} 
+It's easier for malicious hackers to figure out one puzzle in order to access everything, as opposed to many smaller puzzles throughout the software. Therefore, TPMs promote `weaknesses in the overall security' of the Jeep.
+
+\vspace{.5cm}\hspace{-.5cm}\textbf{Describing in detail}\vspace{.2cm}
 
 He reported these errors both to the public and to the car manufacturers themselves so the problems could be remedied, and only days later Jeep recalled the vehicles to be updated with a security patch.\cite{recall}
 
+\vspace{.5cm}\hspace{-.5cm}\textbf{Discussion Summary}\vspace{.2cm}
+
+
+\begin{framed}
+\hspace{-.67cm}\textbf{SE Code 6.06:} Detect, Correct, Report 
+
+\hspace{-.67cm}\textbf{Charlie Miller:} Ethical
+\end{framed}
 
 
 %%%%%%%%%%%%%%%%%
@@ -237,29 +283,29 @@ He reported these errors both to the public and to the car manufacturers themsel
 %%%%%%%%%%%%%%%%%
 \subsection{SE Code 2.05}
 
-SE Code section 2.05 states that software engineers are to \textbf{``Keep private any \underline{confidential} information gained in their \underline{professional work}, where such confidentiality is consistent with the \underline{public interest} and consistent with the law.''}\cite{seCode}
+SE Code section 2.05 states that software engineers are to \textbf{``Keep \underline{private} any \underline{confidential} information gained in their \underline{professional work}, where such confidentiality is consistent with the \underline{public interest} and consistent with the law.''}\cite{seCode}
 
-``Confidential'' means to speak or write about something only in strict privacy.\cite{dictionary}
+``Confidential'' means to speak or write about something only in strict privacy or secrecy.\cite{dictionary}
 
-``Private'' is defined as ``confined to or intended only for the persons immediately concerned."\cite{dictionary} Therefore keeping something ``private'' would be to not share any of the information gained in researching the vehicles to anyone who doesn't need to be involved. In this case, only Jeep should be involved since it's Jeep's cars and customers that are affected. The general public does not need to know the details.
+``Private'' is defined as ``confined to or intended only for the persons immediately concerned."\cite{dictionary} Therefore keeping something ``private'' would be to not share any of the information gained in researching the vehicles to anyone who doesn't need to be involved. In this case, only the car manufacturer should be involved since their cars and customers are affected. 
+%The general public does not need to know the details.
 
-``Professional work'' refers to Charlie Miller's knowledge in security research and his involvement in researching the security software behind the Jeep vehicle. 
+``Professional work'' is ``a vocation requiring knowledge of some department of learning or science''\cite{dictionary}. The department of science that Charlie Miller has knowledge in is the field of security research. 
 
-The ``public interest" in the context of the Jeep hack is the general interest people have over their personal vehicles. This is stated as such in Miller and Valasek's published paper on the hack: ``Car security research is interesting for a general audience because most people have cars and understand the inherent dangers of an attacker gaining control of their vehicle." \cite{officialPaper}
+As explained in section 5.2, the public interest is the well-being of drivers, pedestrians, and insurance vehicles.
 
-The ``consistency with the law'' for the Jeep case directly relates to the DMCA's anti-circumvention law. 
-
-% this repeats
-The Anti-Circumvention law, Section 1201(a.1.A) of the DMCA, states: ``No person shall circumvent a technological measure that effectively controls access to a work protected under this title."\cite{DMCA}
+The domain specific example of``law'' relates to copyright law. %nda?
 
 
 \subsubsection{Substituted Code: Charlie Miller should not publicly speak, write, or share any information gained from security research on the Jeep car that could put the general public at risk of having an attacker gain control of their vehicle.}
+
+Charlie Miller should not publicly speak, write, or share any information gained from security research on the Jeep car, where such secrecy is consistent with the well-being of drivers, pedestrians, insurance companies and consistent with the law.
 
 After their discovery of the vulnerability, on August 10, 2015, Miller and Valasek published a paper titled ``Remote Exploitation of an Unaltered Vehicle."\cite{officialPaper} This paper outlined the more in depth, fine details of how they managed to bypass the car's TPMs. By providing this information to the public, some Jeep owners were likely left vulnerable, as we will further discuss.
 
 % TO ADD IN LATER: Also cars of other makers were affected. Did ALL manufacturers make recalls? Affects even more people!
 
-A general time line of events for reference, the Jeep hack demonstration happened roughly July 21, 2015\cite{wired}, and Jeep recalled their affected vehicles only days later.\cite{recall} Although the paper wasn't published until a month later, it's very unlikely that every Jeep car on the road who was vulnerable to this reported back to Jeep to have it fixed. Therefore, by providing the specifics of the hack, it allowed people to try it on their own on any car they found that wasn't updated, potentially harming an unsuspecting Jeep owner. 
+A general time line of events: The Jeep hack demonstration happened roughly July 21, 2015\cite{wired} and Jeep recalled their affected vehicles only days later.\cite{recall} Although Miller and Valasek's official paper wasn't published until a month later, it's very unlikely that every Jeep car on the road who was vulnerable to the security vulnerability reported back to Jeep to have it fixed. Therefore, by providing the specifics of the hack, it allowed people to try it on their own on any car they found one that wasn't updated, potentially harming an unsuspecting Jeep owner. 
 
 The DMCA's anti-circumvention law protects against cases like this from happening by making it illegal to bypass TPMs in the first place.\cite{DMCA} By outlawing this behavior, they can be sure nobody may legally hack into their vehicles, for good or for bad. If nobody finds a vulnerability to exploit, nobody is at risk of being hacked.
 
